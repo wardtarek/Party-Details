@@ -1,0 +1,117 @@
+:root{
+  scroll-behavior: auto;
+}
+/* HOME */
+#home {
+  height: 90vh;
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/events-heavenly-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.openDiv {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+/* SIDEBAR */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -250px;
+}
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.sidebar ul li {
+  padding: 15px;
+}
+.sidebar ul li i{
+  cursor: pointer;
+}
+.sidebar a, .sidebar i {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  transition: all 0.5s;
+}
+.sidebar ul li a:hover, .sidebar ul li i:hover{
+  color: rgba(214, 46, 51, 0.4);
+}
+/* SLIDER */
+#details .item h3 {
+  color: #fff;
+  background-color: #e68285;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+#details .item p {
+  background-color: #cccccc;
+  margin: 0;
+  padding: 10px;
+}
+#details .item:not(.item1) p {
+  display: none;
+}
+/* DURATION */
+#duration {
+  background-image: linear-gradient(
+      rgba(214, 46, 51, 0.6),
+      rgba(214, 46, 51, 0.6)
+    ),
+    url(../images/invitation-2508607__340.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#duration .row p {
+  color: #fff;
+  font-size: 30px;
+  border: 2px solid #fff;
+  padding: 50px;
+  margin: 0;
+  font-weight: 500;
+}
+/* CONTACT */
+#contact {
+  color: #444;
+}
+#contact p,
+#contact span,
+#contact li {
+  color: #777;
+}
+
+#contact li {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin-inline: 10px;
+  border: 1px solid #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+#contact li:hover {
+  background-color: #d62e33;
+  color: #fff;
+  border: none;
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #details .item {
+    width: 50%;
+  }
+}
